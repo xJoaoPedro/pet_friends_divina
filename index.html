@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Friends Divina</title>
+</head>
+
+<body id="body">
+
+    <header>
+
+        <a href="index.html" class="linkLogo">
+            <img src="/imagens/logo.png" alt="logo" id="logoIcon">
+        </a>
+
+        
+    </header>
+    <div class="nav">
+        <a href="#doacao" rel="noopener noreferrer"><img src="/imagens/coracao.png" alt="icone doar"> Doar</a>
+        <a href="http://" rel="noopener noreferrer"><img src="/imagens/pata.png" alt="icone de adocao"> Adoção</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="/imagens/contato.png" alt="icone de contato"> Contatos</a>
+    </div>
+
+    <main>
+
+        <div class="whats">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="/imagens/whats.png" alt="logo whatsapp"></a>
+        </div>
+
+        <div class="video_bloco">
+            
+        </div>
+
+        <div class="doacao_bloco" id="doacao">
+            <div class="topoDoacao"></div>
+
+            <div class="doacao">
+                <div class="doacao_imagem">
+                    <img src="/imagens/doacaoImg.png" alt="">
+                </div>
+            </div>
+
+            <div class="baixoDoacao"></div>
+        </div>
+
+        <div class="adocao_bloco">
+
+        </div>
+
+        <div class="contato_bloco">
+            
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('a').on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1500, 'easeOutBack');
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
