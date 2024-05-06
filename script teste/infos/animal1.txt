@@ -1,0 +1,3 @@
+nome rex
+idade 12
+raca lulu

@@ -1,0 +1,3 @@
+nome belinha
+idade 19
+raca pastor

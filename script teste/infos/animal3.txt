@@ -1,0 +1,3 @@
+nome toquinho
+idade 5
+raca lulu
