@@ -110,6 +110,33 @@ main {
     background-color: orange;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #doacao {
     width: 100%;
     padding: 10vh 0;
@@ -356,10 +383,80 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .contato_bloco {
     width: 100%;
     height: 100vh;
-    background-color: olivedrab;
 }
 
+#doacao {
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.topoContato {
+    width: 100%;
+    height: 15.2vh;
+    margin-bottom: -2px;
+    background-image: url(/imagens/topoContato.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+}
+
+.contato {
+    width: 100%;
+    height: 84.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #151f71;
+}
+
+.contato_texto {
+    width: 100%;
+
+}
+
+.contato_imagem {
+    width: fit-content;
+    margin-bottom: -5px;
+}
 /**fim do estilo da main**/
