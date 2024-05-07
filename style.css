@@ -36,7 +36,12 @@ header {
     opacity: 80%;
 }
 
+/**fim do estilo da header**/
+
+/**inicio do estilo da nav**/
+
 .nav {
+    z-index: 1;
     width: fit-content;
     position: fixed;
     top: 30px;
@@ -46,6 +51,7 @@ header {
     padding: 5px;
     background-color: #151f71;
     border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .nav a {
@@ -55,7 +61,7 @@ header {
     font-size: 1.1vw;
     display: flex;
     align-items: center;
-    transition: opacity 0.3sç
+    transition: opacity 0.3s;
 }
 
 .nav a:hover {
@@ -66,10 +72,6 @@ header {
     padding-right: 8px;
 }
 
-
-/**fim do estilo da header**/
-
-/**inicio do estilo da nav**/
 /**fim do estilo da nav**/
 
 /**início do estilo da main**/
@@ -89,13 +91,28 @@ main {
 
 .video_bloco {
     width: 100%;
-    height: 100vh;
-    background-color: aqua;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+.video {
+    width: 40%;
+    height: 50%;
+    background-color: red;
+}
+
+.texto_video {
+    width: 40%;
+    height: 50%;
+    background-color: orange;
 }
 
 #doacao {
     width: 100%;
-    padding-top: 10vh;
+    padding: 10vh 0;
 }
 
 .topoDoacao {
@@ -119,8 +136,8 @@ main {
 
 .doacao {
     width: 100%;
-    height: 60vh;
     display: flex;
+    align-items: center;
     background-color: #151f71;
 }
 
@@ -139,7 +156,7 @@ main {
 }
 
 .doacao_texto {
-    width: 50%;
+    width: 60%;
     height: 100%;
     color: #FFF;
     padding: 10px;
@@ -149,26 +166,41 @@ main {
 }
 
 .doacao_texto h1 {
-    font-size: 2.4vw;
+    text-align: center;
+    font-size: 2.65vw;
     font-family: "Bree Serif", serif;
 }
 
 .doacao_texto p {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    font-family: "Georgia", serif;
+    text-align: center;
     text-justify: inter-word;
 }
 
+.doacao_texto span {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .doacao_botao {
-    width: 30%;
-    height: 100%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .botao_bloco {
-    width: 70%;
-    height: 20%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    font-size: 1.1vw;
+    font-family: "Bree Serif", serif;
+    color: #FFF;
+    text-decoration: none;
     border: solid 1px #FFF;
     border-style: groove;
     border-radius: 15px;
@@ -178,16 +210,151 @@ main {
     transition: scale 0.5s;
 }
 
+.botao_bloco img {
+     height: 1.2vw;  /** loucura mas funciona **/
+}
+
 .botao_bloco:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     scale: 1.1;
 }
 
-.adocao_bloco {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#adocao {
     width: 100%;
-    height: 100vh;
-    background-color: rebeccapurple;
+    padding: 10vh 0;
 }
+
+.topoadocao {
+    width: 100%;
+    height: 15.2vh;
+    margin-bottom: -2px;
+    background-image: url(/imagens/topoadocao.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+}
+
+.baixoadocao {
+    width: 100%;
+    height: 15.2vh;
+    margin-top: -2px;
+    background-image: url(/imagens/baixoadocao.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.adocao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #151f71;
+}
+
+.adocao_imagem {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.adocao_imagem img {
+    max-width: max-content;
+    max-height: max-content;
+    height: auto;
+    width: 100%;
+}
+
+.adocao_texto {
+    width: 60%;
+    height: 100%;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adocao_texto h1 {
+    text-align: center;
+    font-size: 2.65vw;
+    font-family: "Bree Serif", serif;
+}
+
+.adocao_texto p {
+    font-size: 1.4vw;
+    font-family: "Georgia", serif;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.adocao_texto span {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.adocao_botao {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_bloco img {
+     height: 1.2vw;  /** loucura mas funciona **/
+}
+
+.botao_bloco:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    scale: 1.1;
+}
+
+
+
+
+
 
 .contato_bloco {
     width: 100%;
