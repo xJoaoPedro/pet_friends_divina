@@ -86,7 +86,6 @@ main {
     bottom: 25px;
     right: 20px;
     border-radius: 32px;
-    transition: width 1.5s;
 }
 
 .video_bloco {
