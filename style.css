@@ -10,7 +10,7 @@
 header {
     width: 100%;
     height: 130px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +20,7 @@ header {
 }
 
 .linkLogo {
-    width: fit-content;
-    height: 100px;
+    height: 100%;
     display: flex;
     align-items: top;
 }
@@ -59,6 +58,7 @@ header {
     text-decoration: none;
     padding: 10px 15px;
     font-size: 1.1vw;
+    font-family: "Bree Serif", serif;
     display: flex;
     align-items: center;
     transition: opacity 0.3s;
@@ -70,6 +70,7 @@ header {
 
 .nav a img {
     padding-right: 8px;
+    height: 1.5vw;
 }
 
 /**fim do estilo da nav**/
@@ -82,6 +83,7 @@ main {
 
 .whats {
     position: fixed;
+    z-index: 2;
     display: flex;
     bottom: 25px;
     right: 20px;
@@ -94,7 +96,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rebeccapurple;
 }
 
 .video {
@@ -108,23 +109,6 @@ main {
     height: 50%;
     background-color: orange;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -237,46 +221,14 @@ main {
 }
 
 .botao_bloco img {
-     height: 1.2vw;  /** loucura mas funciona **/
+    height: 1.2vw;
+    /** loucura mas funciona **/
 }
 
 .botao_bloco:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     scale: 1.1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -368,50 +320,10 @@ main {
     align-items: center;
 }
 
-.botao_bloco img {
-     height: 1.2vw;  /** loucura mas funciona **/
-}
-
 .botao_bloco:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     scale: 1.1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -455,7 +367,161 @@ main {
 }
 
 .contato_imagem {
-    width: fit-content;
+    width: 100%;
+    overflow: hidden;
     margin-bottom: -5px;
+    display: flex;
+    justify-content: center;
+    background-color: #151f71;
 }
+
+.contato_imagem img {
+    width: 100%;
+}
+
 /**fim do estilo da main**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1375px) {}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        background-image: url(/imagens/mobileBG.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: visible;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .linkLogo {
+        height: 70%;
+    }
+
+    .nav a {
+        padding: 5px;
+        font-size: 2.5vw;
+        font-family: "Bree Serif", serif;
+    }
+
+    .nav a img {
+        padding-right: 2px;
+    }
+
+    .whats {
+        bottom: env(safe-area-inset-bottom);
+        margin-bottom: 10px;
+        right: 10px;
+        scale: 0.8;
+    }
+
+    .video_bloco {
+        flex-direction: column;
+    }
+
+    .video {
+        width: 80%;
+        height: 25%;
+    }
+
+    .texto_video {
+        width: 80%;
+        height: 25%;
+    }
+
+    #doacao {
+        padding: 0;
+    }
+
+    .doacao {
+        flex-direction: column;
+    }
+
+    .doacao_imagem {
+        display: none;
+    }
+
+    .doacao_texto {
+        width: 100%;
+    }
+
+    .doacao_texto h1 {
+        font-size: 4vw;
+    }
+
+    .doacao_texto p {
+        padding: 10px 0;
+        font-size: 2vw;
+    }
+
+    .doacao_botao {
+        width: 40%;
+    }
+
+    .botao_bloco {
+        font-size: 2vw;
+    }
+
+    .botao_bloco img {
+        height: 2vw;
+    }
+
+    .adocao {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .adocao_texto {
+        width: 100%;
+    }
+
+    .adocao_texto h1 {
+        font-size: 4vw;
+    }
+
+    .adocao_texto p {
+        padding: 10px 0;
+        font-size: 2vw;
+    }
+
+    .adocao_botao {
+        width: 40%;
+    }
+
+    .adocao_imagem {
+        display: none;
+    }
+
+    .contato_imagem img {
+        width: 170%;
+    }
+}

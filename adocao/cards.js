@@ -76,6 +76,8 @@ while (i < 20) {
 }
 
 
-
-
-
+function ativaHover(element) {
+    if (window.innerWidth < 600) { // verificar esse valor, mas ta funcionando
+        element.classList.toggle('active');
+    }
+}
