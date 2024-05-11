@@ -236,17 +236,18 @@ header {
 @media screen and (max-width: 480px) {
 
   .linkLogo {
-    height: 70%;
+    height: 50%;
   }
 
   .nav a {
     padding: 5px;
-    font-size: 2.5vw;
+    font-size: 4vw;
     font-family: "Bree Serif", serif;
   }
 
   .nav a img {
     padding-right: 2px;
+    height: 4vw;
   }
 
   .whats {
@@ -254,6 +255,7 @@ header {
     margin-bottom: 10px;
     right: 10px;
     scale: 0.8;
+    z-index: 2;
   }
 
   .adocao_texto {
@@ -261,21 +263,21 @@ header {
   }
 
   .adocao_texto h1 {
-    font-size: 8vw;
+    font-size: 12vw;
   }
 
   .adocao_texto p {
     padding: 15px;
-    font-size: 3vw;
+    font-size: 5vw;
   }
 
   .adocao_whats {
-    width: 40%;
-    font-size: 3vw;
+    width: 50%;
+    font-size: 5vw;
   }
 
   .adocao_whats img {
-    height: 6.5vw;
+    height: 10.8vw;
   }
 
   .paragrafo_cards {

@@ -88,6 +88,11 @@ main {
     bottom: 25px;
     right: 20px;
     border-radius: 32px;
+    transition: opacity 1s;
+}
+
+.whats:hover {
+    opacity: 70%;
 }
 
 .video_bloco {
@@ -424,17 +429,18 @@ main {
     }
 
     .linkLogo {
-        height: 70%;
+        height: 50%;
     }
 
     .nav a {
         padding: 5px;
-        font-size: 2.5vw;
+        font-size: 4vw;
         font-family: "Bree Serif", serif;
     }
 
     .nav a img {
         padding-right: 2px;
+        height: 4vw;
     }
 
     .whats {
@@ -472,27 +478,28 @@ main {
 
     .doacao_texto {
         width: 100%;
+        padding: 0;
     }
 
     .doacao_texto h1 {
-        font-size: 4vw;
+        font-size: 8vw;
     }
 
     .doacao_texto p {
-        padding: 10px 0;
-        font-size: 2vw;
+        padding: 30px 10px;
+        font-size: 4vw;
     }
 
     .doacao_botao {
-        width: 40%;
+        width: 70%;
     }
 
     .botao_bloco {
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .botao_bloco img {
-        height: 2vw;
+        height: 4vw;
     }
 
     .adocao {
@@ -502,19 +509,20 @@ main {
 
     .adocao_texto {
         width: 100%;
+        padding: 10px 0;
     }
 
     .adocao_texto h1 {
-        font-size: 4vw;
+        font-size: 8vw;
     }
 
     .adocao_texto p {
-        padding: 10px 0;
-        font-size: 2vw;
+        padding: 30px 10px;
+        font-size: 4vw;
     }
 
     .adocao_botao {
-        width: 40%;
+        width: 70%;
     }
 
     .adocao_imagem {
