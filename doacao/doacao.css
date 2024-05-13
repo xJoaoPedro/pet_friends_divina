@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    width: 100%;
+    height: 130px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 20px 30px;
+    z-index: 1;
+    background: linear-gradient(#1B2797 0%, #151f71 100%);
+  }
+  
+  .linkLogo {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    align-items: top;
+  }
+  
+  #logoIcon {
+    height: 90%;
+    filter: drop-shadow(1px 1px 3px #F50C14);
+    transition: opacity 0.3s;
+  }
+  
+  #logoIcon:hover {
+    opacity: 80%;
+  }
+  
+  .nav {
+    z-index: 1;
+    width: fit-content;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #151f71;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  }
+  
+  .nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .nav a:hover {
+    opacity: 80%;
+  }
+  
+  .nav a img {
+    padding-right: 8px;
+    height: 1.5vw;
+  }
+  
+  .whats {
+    position: fixed;
+    display: flex;
+    bottom: 25px;
+    right: 20px;
+    border-radius: 32px;
+    z-index: 2;
+  }
+
+  .doacao_texto {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #151f71;
+    box-shadow: 0 2px 30px #000;
+  }
+  
+  .doacao_texto h1 {
+    color: #FFF;
+    font-size: 5vw;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .doacao_texto p {
+    padding: 30px 0;
+    color: #FFF;
+    font-size: 1.6vw;
+    font-family: "Bree Serif", serif;
+  }
+  
+  .doacao_texto span {
+    font-style: italic;
+    font-family: "Bree Serif", serif;
+  }
+
+  .doacao_whats {
+    width: 20%;
+    background-color: #2AA81A;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 1.6vw;
+    font-family: "Bree Serif", serif;
+    text-decoration: none;
+    transition: opacity 0.6s;
+  }
+  
+  .doacao_whats:hover {
+    opacity: 70%;
+  }
+  
+  .doacao_whats img {
+    height: 3.5vw;
+  }
