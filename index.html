@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,34 +52,37 @@
                     <img src="/imagens/doacaoImg.png" alt="animais">
                 </div>
 
-                <div class="doacao_texto">
-                    <h1>Doe para os animais de rua, faça a diferença</h1>
-                    <p>
-                        <br>
-                        <span>Cada vida importa.</span>
-                        <br><br>
-                        Um pequeno gesto de bondade pode fazer uma grande diferença. E
-                        quando se trata de animais de rua, a sua ajuda pode ser a diferença entre a vida e a morte.
-                        <br><br>
-                        Os animais de rua vivem uma vida de luta constante. Eles enfrentam fome, doenças, clima extremo
-                        e
-                        muitas vezes, crueldade humana. Mas há uma coisa que pode dar-lhes esperança: <span>a sua
-                            doação</span>.
-                        <br><br>
-                        Ao doar para animais de rua, você está dando a eles uma chance de viver uma vida melhor. Você
-                        está dando a
-                        eles uma chance de conhecer a bondade humana.
-                        <br><br><br>
-                        <span>Por que não fazer a diferença hoje? Doe para animais de rua!</span>
-                    </p>
+                <div class="doacao_texto_bloco">
+                    <div class="doacao_texto">
+                        <h1>Doe para os animais de rua, faça a diferença</h1>
+                        <p>
+                            <br>
+                            <span>Cada vida importa.</span>
+                            <br><br>
+                            Um pequeno gesto de bondade pode fazer uma grande diferença. E
+                            quando se trata de animais de rua, a sua ajuda pode ser a diferença entre a vida e a morte.
+                            <br><br>
+                            Os animais de rua vivem uma vida de luta constante. Eles enfrentam fome, doenças, clima extremo
+                            e
+                            muitas vezes, crueldade humana. Mas há uma coisa que pode dar-lhes esperança: <span>a sua
+                                doação</span>.
+                            <br><br>
+                            Ao doar para animais de rua, você está dando a eles uma chance de viver uma vida melhor. Você
+                            está dando a
+                            eles uma chance de conhecer a bondade humana.
+                            <br><br><br>
+                            <span>Por que não fazer a diferença hoje? Doe para animais de rua!</span>
+                        </p>
+                    </div>
+                    
+                    <div class="doacao_botao">
+                        <a class="botao_bloco" href="/doacao.html">
+                            Visitar pagina de doações
+                            <img src="/imagens/link.png" alt="icone de link para outra pagina">
+                        </a>
+                    </div>
                 </div>
-                
-                <div class="doacao_botao">
-                    <a class="botao_bloco" href="/doacao.html">
-                        Visitar pagina de doações
-                        <img src="/imagens/link.png" alt="icone de link para outra pagina">
-                    </a>
-                </div>
+
 
             </div>
             <div class="baixoDoacao"></div>
@@ -92,29 +94,32 @@
 
             <div class="adocao">
 
-                <div class="adocao_texto">
-                    <h1>Adote e dê uma chance a um animalzinho!</h1>
-                    <p>
-                        <br>
-                        Todos os dias, inúmeros animais em todo o mundo são abandonados e deixados para se defenderem
-                        sozinhos. <span>Eles são inocentes, vulneráveis e precisam de ajuda.</span>
-                        <br><br>
-                        Ao adotar, você não está só salvando uma vida, mas também abrindo espaço para que outros
-                        animais necessitados sejam resgatados e cuidados.
-                        <br><br>
-                        Lembre-se, cada animal merece um lar amoroso. Se você tem espaço em sua
-                        casa e em seu coração, considere adotar um animal sem lar. 
-                        <br><br><br>
-                        <span>Eles podem não ter tido o melhor começo na vida, mas com sua ajuda, eles podem ter o melhor futuro possível.</span>
-                    </p>
+                <div class="adocao_texto_bloco">
+                    <div class="adocao_texto">
+                        <h1>Adote e dê uma chance a um animalzinho!</h1>
+                        <p>
+                            <br>
+                            Todos os dias, inúmeros animais em todo o mundo são abandonados e deixados para se defenderem
+                            sozinhos. <span>Eles são inocentes, vulneráveis e precisam de ajuda.</span>
+                            <br><br>
+                            Ao adotar, você não está só salvando uma vida, mas também abrindo espaço para que outros
+                            animais necessitados sejam resgatados e cuidados.
+                            <br><br>
+                            Lembre-se, cada animal merece um lar amoroso. Se você tem espaço em sua
+                            casa e em seu coração, considere adotar um animal sem lar. 
+                            <br><br><br>
+                            <span>Eles podem não ter tido o melhor começo na vida, mas com sua ajuda, eles podem ter o melhor futuro possível.</span>
+                        </p>
+                    </div>
+    
+                    <div class="adocao_botao">
+                        <a class="botao_bloco" href="/adocao/adocao.html">
+                            Visitar pagina de adoção
+                            <img src="/imagens/link.png" alt="icone de link para outra pagina">
+                        </a>
+                    </div>
                 </div>
 
-                <div class="adocao_botao">
-                    <a class="botao_bloco" href="/adocao/adocao.html">
-                        Visitar pagina de adoção
-                        <img src="/imagens/link.png" alt="icone de link para outra pagina">
-                    </a>
-                </div>
                 <div class="adocao_imagem">
                     <img src="/imagens/adocaoImg.png" alt="animais">
                 </div>
@@ -180,7 +185,7 @@
 
 
 
-
+    <link rel="stylesheet" href="style.css">
     <script>
         $(document).ready(function () {
             $('a').on('click', function (event) {

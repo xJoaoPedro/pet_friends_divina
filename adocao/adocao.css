@@ -62,6 +62,7 @@ header {
   display: flex;
   align-items: center;
   transition: opacity 0.3s;
+  font-family: "Bree Serif", serif;
 }
 
 .nav a:hover {
@@ -79,6 +80,7 @@ header {
   bottom: 25px;
   right: 20px;
   border-radius: 32px;
+  z-index: 2;
 }
 
 .adocao_texto {
@@ -231,7 +233,52 @@ header {
 
 
 
-@media screen and (max-width: 1375px) {}
+@media screen and (max-width: 780px) {
+  .nav a {
+    padding: 5px;
+    font-size: 2.5vw;
+  }
+
+  .nav a img {
+    padding-right: 2px;
+    height: 2.5vw;
+  }
+
+  .adocao_texto h1 {
+    font-size: 8vw;
+  }
+
+  .adocao_texto p {
+    padding: 15px;
+    font-size: 3vw;
+  }
+
+  .adocao_whats {
+    width: 35%;
+    font-size: 3vw;
+  }
+
+  .adocao_whats img {
+    height: 6.2vw;
+  }
+
+  .paragrafo_cards {
+    width: 60%;
+    font-size: 2.7vw;
+  }
+
+  .paragrafo_cards img {
+    height: 2.7vw;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -255,7 +302,6 @@ header {
     margin-bottom: 10px;
     right: 10px;
     scale: 0.8;
-    z-index: 2;
   }
 
   .adocao_texto {
