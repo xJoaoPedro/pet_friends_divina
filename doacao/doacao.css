@@ -1,135 +1,225 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  header {
-    width: 100%;
-    height: 130px;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px 20px 30px;
-    z-index: 1;
-    background: linear-gradient(#1B2797 0%, #151f71 100%);
-  }
-  
-  .linkLogo {
-    width: fit-content;
-    height: 100px;
-    display: flex;
-    align-items: top;
-  }
-  
-  #logoIcon {
-    height: 90%;
-    filter: drop-shadow(1px 1px 3px #F50C14);
-    transition: opacity 0.3s;
-  }
-  
-  #logoIcon:hover {
-    opacity: 80%;
-  }
-  
-  .nav {
-    z-index: 1;
-    width: fit-content;
-    position: fixed;
-    top: 30px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #151f71;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-  }
-  
-  .nav a {
-    color: #FFF;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 1.1vw;
-    display: flex;
-    align-items: center;
-    transition: opacity 0.3s;
-    font-family: "Bree Serif", serif;
-  }
-  
-  .nav a:hover {
-    opacity: 80%;
-  }
-  
-  .nav a img {
-    padding-right: 8px;
-    height: 1.5vw;
-  }
-  
-  .whats {
-    position: fixed;
-    display: flex;
-    bottom: 25px;
-    right: 20px;
-    border-radius: 32px;
-    z-index: 2;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .doacao_texto {
-    width: 100%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #151f71;
-    box-shadow: 0 2px 30px #000;
-  }
-  
-  .doacao_texto h1 {
-    color: #FFF;
-    font-size: 5vw;
-    font-family: "Bree Serif", serif;
-  }
-  
-  .doacao_texto p {
-    padding: 30px 0;
-    color: #FFF;
-    font-size: 1.6vw;
-    font-family: "Bree Serif", serif;
-  }
-  
-  .doacao_texto span {
-    font-style: italic;
-    font-family: "Bree Serif", serif;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .doacao_whats {
-    width: 20%;
-    background-color: #2AA81A;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 20px;
-    color: #FFF;
-    font-size: 1.6vw;
-    font-family: "Bree Serif", serif;
-    text-decoration: none;
-    transition: opacity 0.6s;
-  }
-  
-  .doacao_whats:hover {
-    opacity: 70%;
-  }
-  
-  .doacao_whats img {
-    height: 3.5vw;
-  }
+p, h1 {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+header {
+  width: 100%;
+  height: 130px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 20px 30px;
+  z-index: 1;
+  background: linear-gradient(#1B2797 0%, #151f71 100%);
+}
+
+.linkLogo {
+  width: fit-content;
+  height: 100px;
+  display: flex;
+  align-items: top;
+}
+
+#logoIcon {
+  height: 90%;
+  filter: drop-shadow(1px 1px 3px #F50C14);
+  transition: opacity 0.3s;
+}
+
+#logoIcon:hover {
+  opacity: 80%;
+}
+
+.nav {
+  z-index: 1;
+  width: fit-content;
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: #151f71;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.nav a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1.1vw;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s;
+  font-family: "Bree Serif", serif;
+}
+
+.nav a:hover {
+  opacity: 80%;
+}
+
+.nav a img {
+  padding-right: 8px;
+  height: 1.5vw;
+}
+
+.whats {
+  position: fixed;
+  display: flex;
+  bottom: 25px;
+  right: 20px;
+  border-radius: 32px;
+  z-index: 2;
+}
+
+.doacao_texto {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #151f71;
+  box-shadow: 0 2px 30px #000;
+}
+
+.doacao_texto h1 {
+  color: #FFF;
+  font-size: 5vw;
+  font-family: "Bree Serif", serif;
+}
+
+.doacao_texto p {
+  padding: 30px 0;
+  color: #FFF;
+  font-size: 1.6vw;
+  font-family: "Bree Serif", serif;
+}
+
+.doacao_texto span {
+  font-style: italic;
+  font-family: "Bree Serif", serif;
+}
+
+.doacao_whats {
+  width: 20%;
+  background-color: #2AA81A;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  color: #FFF;
+  font-size: 1.6vw;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Bree Serif", serif;
+  text-decoration: none;
+  transition: opacity 0.6s;
+}
+
+.doacao_whats:hover {
+  opacity: 70%;
+}
+
+.doacao_whats img {
+  height: 3.5vw;
+}
+
+.paragrafo_cards {
+  width: 40%;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #FFF;
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  background-color: #F50C14;
+}
+
+.localizacao {
+  width: 60%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1B2797;
+  border-radius: 15px;
+}
+
+.mapa {
+  width: 100%;
+  height: 600px;
+  border-radius: 15px;
+}
+
+.localizacao p {
+  color: #FFF;
+  padding: 10px 0;
+  font-size: 1.8vw;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#cards_bloco {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 280px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+  border-radius: 15px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 5px;
+  background-color: #151f71;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: "Bree Serif", serif;
+  font-size: 2vw;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-card-front img {
+  width: 100%;
+  filter: drop-shadow(0 0 15px #FFFFFF66);
+}
