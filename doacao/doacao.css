@@ -223,3 +223,143 @@ header {
   width: 100%;
   filter: drop-shadow(0 0 15px #FFFFFF66);
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .nav a {
+    padding: 5px;
+    font-size: 2.5vw;
+  }
+
+  .nav a img {
+    padding-right: 2px;
+    height: 2.5vw;
+  }
+
+  .doacao_texto h1 {
+    font-size: 8vw;
+  }
+
+  .doacao_texto p {
+    padding: 15px;
+    font-size: 3vw;
+  }
+
+  .doacao_whats {
+    width: 35%;
+    font-size: 3vw;
+  }
+
+  .doacao_whats img {
+    height: 6.2vw;
+  }
+
+  .paragrafo_cards {
+    width: 60%;
+    font-size: 2.7vw;
+  }
+
+  .paragrafo_cards img {
+    height: 2.7vw;
+  }
+
+  .localizacao {
+    width: 85%;
+  }
+
+  .localizacao p {
+    font-size: 3.2vw;
+  }
+
+  .mapa {
+    height: 450px;
+  }
+
+  .flip-card-front {
+    font-size: 3.2vw;
+  }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .linkLogo {
+    height: 50%;
+  }
+
+  .nav a {
+    padding: 5px;
+    font-size: 4vw;
+    font-family: "Bree Serif", serif;
+  }
+
+  .nav a img {
+    padding-right: 2px;
+    height: 4vw;
+  }
+
+  .whats {
+    bottom: env(safe-area-inset-bottom);
+    margin-bottom: 10px;
+    right: 10px;
+    scale: 0.8;
+  }
+
+  .doacao_texto {
+    padding: 10px;
+  }
+
+  .doacao_texto h1 {
+    font-size: 12vw;
+  }
+
+  .doacao_texto p {
+    padding: 15px;
+    font-size: 5vw;
+  }
+
+  .doacao_whats {
+    width: 50%;
+    font-size: 5vw;
+  }
+
+  .doacao_whats img {
+    height: 10.8vw;
+  }
+
+  .paragrafo_cards {
+    width: 70%;
+    font-size: 4vw;
+  }
+
+  .localizacao {
+    width: 90%;
+  }
+
+  .mapa {
+    height: 300px;
+  }
+
+  .localizacao p {
+    font-size: 3.8vw;
+  }
+
+  .flip-card {
+    width: 180px;
+    height: 150px;
+  }
+
+  .flip-card-front {
+    font-size: 3.5vw;
+  }
+}
