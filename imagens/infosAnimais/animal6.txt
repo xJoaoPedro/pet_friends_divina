@@ -1,5 +1,5 @@
 sexo Fêmea
 idade 2 anos
-porte Médio
+porte Grande
 vacina Vacinada
 castracao Castrada

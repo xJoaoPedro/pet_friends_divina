@@ -24,7 +24,7 @@ while (i < 20) {
 
     let caminhoImg = "../imagens/imagensAnimais/animal"
     caminhoImg = caminhoImg + i
-    caminhoImg = caminhoImg + ".jpg"
+    caminhoImg = caminhoImg + ".jpeg"
     //criando o caminho para a imagem
 
     novaFoto.src = caminhoImg
@@ -47,18 +47,24 @@ while (i < 20) {
         .then(data => {
             data = data.split(/[\s\r\n]+/)
             console.log(data)
-            if (data[0] != "nome") {
+            if (data[0] != "sexo") {
                 return
             } else {
                 for (i = 0; i < data.length; i++) {
-                    if (data[i] == "nome") {
-                        novaInfo.innerHTML += "Nome: " + data[i + 1]
+                    if (data[i] == "sexo") {
+                        novaInfo.innerHTML += data[i + 1]
                     } else if (data[i] == "idade") {
                         novaInfo.innerHTML += '<br>'
-                        novaInfo.innerHTML += "Idade: " + data[i + 1] + " anos"
-                    } else if (data[i] == "raca") {
+                        novaInfo.innerHTML += data[i + 1] + " " + data[i + 2]
+                    } else if (data[i] == "porte") {
                         novaInfo.innerHTML += '<br>'
-                        novaInfo.innerHTML += "Raça: " + data[i + 1]
+                        novaInfo.innerHTML += "Porte " + data[i + 1]
+                    } else if (data[i] == "vacina") {
+                        novaInfo.innerHTML += '<br>'
+                        novaInfo.innerHTML += data[i + 1]
+                    } else if (data[i] == "castracao") {
+                        novaInfo.innerHTML += '<br>'
+                        novaInfo.innerHTML += data[i + 1]
                     }
                 }
 
