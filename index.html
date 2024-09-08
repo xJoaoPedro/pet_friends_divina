@@ -2,203 +2,154 @@
 <html lang="pt-br">
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="shortcut icon" href="/imagens/favicon.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Friends Divina</title>
+
+    <link rel="shortcut icon" href="/assets/icons/favicon.png" type="image/x-icon">
 </head>
 
-<body id="body">
+<body>
 
-    <header>
-
-        <a href="index.html" class="linkLogo">
-            <img src="/imagens/logo.png" alt="logo" id="logoIcon">
-        </a>
-
-
-    </header>
-    <div class="nav">
-        <a href="#doacao" rel="noopener noreferrer"><img src="/imagens/coracao.png" alt="icone doar"> Doar</a>
-        <a href="#adocao" rel="noopener noreferrer"><img src="/imagens/pata.png" alt="icone de adocao"> Adoção</a>
-        <a href="#contato" rel="noopener noreferrer"><img src="/imagens/contato.png" alt="icone de contato">
-            Contatos</a>
+    <div id="back-to-top">
+        <img src="/assets/icons/whatsapp.svg" alt="whatsapp icon">
     </div>
 
-    <main>
+    <header id="header">
+        <img alt="menu icon" id="menuButton">
 
-        <div class="whats">
-            <a href="https://api.whatsapp.com/send?phone=555197175372&text=Olá,%20vim%20pelo%20site!" target="_blank" rel="noopener noreferrer"><img src="/imagens/whats.png"
-                    alt="logo whatsapp"></a>
+        <img src="/assets/images/logo.png" alt="pet friends logo" id="logo">
+
+    </header>
+
+    <nav id="navMenu">
+
+        <ul>
+            <li class="navListItem">
+                <img src="/assets/icons/home.svg" alt="home icon"> Home
+            </li>
+            <li class="navListItem">
+                <img src="/assets/icons/donate.svg" alt="donate icon"> Doar
+            </li>
+            <li class="navListItem">
+                <img src="/assets/icons/adopt.svg" alt="adoption icon"> Adoção
+            </li>
+            <li class="navListItem">
+                <img src="/assets/icons/contact.svg" alt="contact icon">Contato
+            </li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <h1>Cada gesto faz a diferença.</h1>
+
+        <div class="homeFirstText">
+            <p>Com sua ajuda, podemos transformar a vida de muitos animais em busca de um lar.</p>
         </div>
 
-        <!-- <div class="video_bloco">
-            <div class="video"></div>
-            <div class="texto_video"></div>
-        </div> -->
+        <img src="/assets/images/dog1.png" alt="dog image" class="dogHome">
 
-        <div class="doacao_bloco" id="doacao"> <!-- bloco de doacao -->
-            <div class="topoDoacao"></div>
+        <div class="homeSecondText">
+            <p>Nós da Pet Friends vemos cada doação e cada adoção como um ato de amor, que contribui para um futuro
+                melhor para nossos amigos de patas.</p>
+        </div>
 
-            <div class="doacao">
-                <div class="doacao_imagem">
-                    <img src="/imagens/doacaoImg.png" alt="animais">
-                </div>
+        <img src="/assets/images/cat1.png" alt="cat image" class="catHome">
 
-                <div class="doacao_texto_bloco">
-                    <div class="doacao_texto">
-                        <h1>Doe para os animais de rua, faça a diferença</h1>
-                        <p>
-                            <br>
-                            <span>Cada vida importa.</span>
-                            <br><br>
-                            Um pequeno gesto de bondade pode fazer uma grande diferença. E
-                            quando se trata de animais de rua, a sua ajuda pode ser a diferença entre a vida e a morte.
-                            <br><br>
-                            Os animais de rua vivem uma vida de luta constante. Eles enfrentam fome, doenças, clima extremo
-                            e
-                            muitas vezes, crueldade humana. Mas há uma coisa que pode dar-lhes esperança: <span>a sua
-                                doação</span>.
-                            <br><br>
-                            Ao doar para animais de rua, você está dando a eles uma chance de viver uma vida melhor. Você
-                            está dando a
-                            eles uma chance de conhecer a bondade humana.
-                            <br><br><br>
-                            <span>Por que não fazer a diferença hoje? Doe para animais de rua!</span>
-                        </p>
-                    </div>
-                    
-                    <div class="doacao_botao">
-                        <a class="botao_bloco" href="/doacao/doacao.html">
-                            Visitar pagina de doações
-                            <img src="/imagens/link.png" alt="icone de link para outra pagina">
-                        </a>
-                    </div>
-                </div>
+        <div class="homeContact">
+            <span>
+                Visite o nosso <a href="#home" class="instagramButton"><img src="/assets/icons/instagram.svg"
+                        alt="instagram icon" srcset=""> Instagram</a>
+            </span>
+            <span>ou</span>
+            <span>
+                Fale conosco via <a href="#home" class="whatsappButton"><img src="/assets/icons/whatsapp.svg"
+                        alt="whatsapp icon"> Whatsapp</a>
+            </span>
+        </div>
+
+    </section>
 
 
-            </div>
-            <div class="baixoDoacao"></div>
+    <section id="donate">
 
-        </div> 
+        <h2>Como faço para doar?</h2>
 
-        <div class="adocao_bloco" id="adocao"> <!-- bloco de adocao -->
-            <div class="topoadocao"></div>
+        <p>
+            Para doar é bem simples, basta levar sua contribuição até a nossa caixa de doações, que está localizada na
+            Avenida Poti, 1550, no Instituto Divina Providência. <br><br>
+            Doações que aceitamos:
+        </p>
 
-            <div class="adocao">
+        <ul>
+            <li>Ração</li>
+            <li>Casinhas</li>
+            <li>Camas</li>
+            <li>Roupinhas</li>
+            <li>Remédios</li>
+        </ul>
 
-                <div class="adocao_texto_bloco">
-                    <div class="adocao_texto">
-                        <h1>Adote e dê uma chance a um animalzinho!</h1>
-                        <p>
-                            <br>
-                            Todos os dias, inúmeros animais em todo o mundo são abandonados e deixados para se defenderem
-                            sozinhos. <span>Eles são inocentes, vulneráveis e precisam de ajuda.</span>
-                            <br><br>
-                            Ao adotar, você não está só salvando uma vida, mas também abrindo espaço para que outros
-                            animais necessitados sejam resgatados e cuidados.
-                            <br><br>
-                            Lembre-se, cada animal merece um lar amoroso. Se você tem espaço em sua
-                            casa e em seu coração, considere adotar um animal sem lar. 
-                            <br><br><br>
-                            <span>Eles podem não ter tido o melhor começo na vida, mas com sua ajuda, eles podem ter o melhor futuro possível.</span>
-                        </p>
-                    </div>
-    
-                    <div class="adocao_botao">
-                        <a class="botao_bloco" href="/adocao/adocao.html">
-                            Visitar pagina de adoção
-                            <img src="/imagens/link.png" alt="icone de link para outra pagina">
-                        </a>
-                    </div>
-                </div>
+        <img src="/assets/images/donateImage.svg" alt="dog house and dog food image">
 
-                <div class="adocao_imagem">
-                    <img src="/imagens/adocaoImg.png" alt="animais">
-                </div>
+        <h2>Onde nos encontrar:</h2>
 
-            </div>
-            <div class="baixoadocao"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2059.4425856240546!2d-50.02341180121687!3d-29.761567017502358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951878835c706f47%3A0x2e7101975ac1e5e4!2sInstituto%20Divina%20Provid%C3%AAncia!5e0!3m2!1spt-BR!2sbr!4v1725759750331!5m2!1spt-BR!2sbr"
+            style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <p style="text-align: center; padding-top: 5px;">
+            Instituto Divina Providência <br>
+            Avenida Poti, 1550, Bairro Centro <br>
+            Capão da Canoa/RS
+        </p>
+
+
+    </section>
+
+    <section id="adopt">
+
+        <h2>Que tal adotar um amigo?</h2>
+
+        <p>Nossos parceiros possuem muitos animaizinhos que estão esperando por um lar.</p>
+
+        <div id="adoptAnimals">
+            <p>
+                Entre em contato conosco se houver interesse em algum dos nossos companheirinhos:
+            </p>
+
+            <ul id="adoptList"> </ul>
 
         </div>
 
-        <div class="contato_bloco" id="contato"> <!-- bloco de contato -->
-            <div class="topoContato"></div>
+        <img src="/assets/images/dog2.png" alt="dog image" class="dogAdopt">
 
-            <div class="contato">
-                <div class="contato_texto">
-                    <h1>Duvidas? entre em contato conosco!</h1>
-                    <br><br>
-                    <div class="contato_email_telefone">
-                        <div class="email_telefone">
-                            <p>contato@petfriendsdivina.com.br</p>
-                            <p>(51) 9717-5372</p>
-                        </div>
-                        <a class="instagram" href="https://www.instagram.com/petfriends_divina/" target="_blank" rel="noopener noreferrer"><img src="/imagens/instagram.png" alt="logo instagram"> petfriends_Divina</a>
-                    </div>
-                </div>
-
-                <div class="parcerias">
-                    Conheça nossas parcerias:
-                    <div class="cards">
-                        <div class="card_parceria">
-                            <div class="imagem_background">
-                                <img src="/imagens/lambeijos.jpg" alt="foto perfil lambeijos">
-                            </div>
-                            Lambeijos
-                            <a class="instagram_parceria" href="https://www.instagram.com/lambeijos_capao/" target="_blank" rel="noopener noreferrer"><img src="/imagens/instagram.png" alt="logo instagram"> lambeijos_capao</a>
-                        </div>
-                        <div class="card_parceria">
-                            <div class="imagem_background">
-                                <img src="/imagens/petdasgu.jpg" alt="foto perfil pet das gurias">
-                            </div>
-                            Pet das Gurias
-                            <a class="instagram_parceria" href="https://www.instagram.com/lambeijos_capao/" target="_blank" rel="noopener noreferrer"><img src="/imagens/instagram.png" alt="logo instagram"> petshopdasgurias</a>
-                        </div>
-                        <div class="card_parceria">
-                            <div class="imagem_background">
-                                <img src="/imagens/gaia.jpg" alt="foto perfil gaia">
-                            </div>
-                            GAIA
-                            <a class="instagram_parceria" href="https://www.instagram.com/gaia.pets/" target="_blank" rel="noopener noreferrer"><img src="/imagens/instagram.png" alt="logo instagram"> gaia.pets</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="contato_imagem">
-                    <img src="/imagens/contatoImg.png" alt="animais">
-                </div>
-            </div>
-        </div>
-
-    </main>
+        <img id="adoptImage" src="/assets/images/adoptImage.png" alt="dog image">
+    </section>
 
 
 
 
 
 
-    <link rel="stylesheet" href="style.css">
-    <script>
-        $(document).ready(function () {
-            $('a').on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 1500, 'easeOutBack');
-                }
-            });
-        });
-    </script>
+
+
+
+    <section id="contact">
+
+    </section>
+
+
+    <script src="/src/js/navigation.js"></script>
+    <script src="/src/js/btnScroll.js"></script>
+    <script src="/src/js/adaptImage.js"></script>
+    <script src="/src/js/adoptAnimals.js"></script>
 </body>
 
 </html>

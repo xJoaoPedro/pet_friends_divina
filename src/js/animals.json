@@ -1,0 +1,61 @@
+{
+    "animals": [
+      {
+        "sexo": "Fêmea",
+        "idade": "2 anos",
+        "porte": "Porte médio",
+        "vacina": "Vacinada",
+        "castracao": "Castrada",
+        "foto": "./assets/images/adoptImages/animal0.jpeg"
+      },
+      {
+        "sexo": "Fêmea",
+        "idade": "8 meses",
+        "porte": "Porte médio",
+        "vacina": "Vacinada",
+        "castracao": "Castrada",
+        "foto": "./assets/images/adoptImages/animal1.jpeg"
+      },
+      {
+        "sexo": "Macho",
+        "idade": "1 ano",
+        "porte": "Porte pequeno",
+        "vacina": "Vacinado",
+        "castracao": "Castrado",
+        "foto": "./assets/images/adoptImages/animal2.jpeg"
+      },
+      {
+        "sexo": "Fêmea",
+        "idade": "4 anos",
+        "porte": "Porte grande",
+        "vacina": "Vacinada",
+        "castracao": "Castrada",
+        "foto": "./assets/images/adoptImages/animal3.jpeg"
+      },
+      {
+        "sexo": "Fêmea",
+        "idade": "2 anos",
+        "porte": "Porte grande",
+        "vacina": "Vacinada",
+        "castracao": "Castrada",
+        "foto": "./assets/images/adoptImages/animal4.jpeg"
+      },
+      {
+        "sexo": "Macho",
+        "idade": "1 ano",
+        "porte": "Porte pequeno",
+        "vacina": "Vacinado",
+        "castracao": "Castrado",
+        "foto": "./assets/images/adoptImages/animal5.jpeg"
+      },
+      {
+        "sexo": "Fêmea",
+        "idade": "2 meses",
+        "porte": "Porte médio",
+        "vacina": "Vacinada",
+        "castracao": "Castrada",
+        "foto": "./assets/images/adoptImages/animal6.jpeg"
+      }
+
+    ]
+  }

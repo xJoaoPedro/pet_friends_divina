@@ -1,5 +1,0 @@
-sexo Fêmea
-idade 4 anos
-porte Grande
-vacina Vacinada
-castracao Castrada

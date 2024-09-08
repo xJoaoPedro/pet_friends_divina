@@ -1,5 +1,0 @@
-sexo Fêmea
-idade 2 meses
-porte Médio
-vacina Vacinada
-castracao Castrada

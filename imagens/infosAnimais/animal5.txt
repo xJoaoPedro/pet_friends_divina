@@ -1,5 +1,0 @@
-sexo Macho
-idade 1 ano
-porte Pequeno
-vacina Vacinado
-castracao Castrado
