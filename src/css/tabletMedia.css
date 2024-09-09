@@ -1,0 +1,176 @@
+@media screen and (min-width: 610px) {
+
+    header img {
+        height: 80%;
+    }
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        position: sticky;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        list-style-type: none;
+        margin-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .navListItem {
+        font-size: 1.2rem;
+
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-image: linear-gradient(to bottom, transparent 30%, #FFFFFF33 50%, transparent 70%) 1;
+    }
+
+    .navListItem:nth-child(1) {
+        border-left: 0;
+    }
+
+    .navListItem:nth-child(4) {
+        border-right: 0;
+        padding-bottom: 5px;
+    }
+
+    .navListItem img {
+        height: 19px;
+        padding-right: 2vw;
+    }
+
+    #home h1 {
+        font-size: 2.8rem;
+        padding-left: 30px;
+    }
+
+    .homeFirstText,
+    .homeSecondText {
+        font-size: 1.3rem;
+    }
+
+    .dogHome {
+        width: 160px;
+        top: 50px;
+    }
+
+    .catHome {
+        width: 160px;
+        top: 300px;
+    }
+
+    .homeContact span {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
+    .instagramButton,
+    .whatsappButton {
+        height: 90%;
+    }
+
+    .instagramButton img,
+    .whatsappButton img {
+        max-height: 35px;
+        margin-right: 1.5vw;
+    }
+
+    #donate {
+        padding: 10px 0;
+    }
+
+    #donate h2 {
+        padding: 20px 10px;
+        font-size: 1.8rem;
+    }
+
+    #donate p {
+        padding: 20px 30px;
+        font-size: 1.1rem;
+    }
+
+    #donate ul {
+        width: 70%;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    #donate ul li {
+        font-size: 1.2rem;
+    }
+
+    #donate img {
+        position: absolute;
+        top: 180px;
+    }
+
+    #donate iframe {
+        width: 100%;
+        height: 300px;
+    }
+    
+    #adopt h2 {
+        padding: 20px 0;
+        font-size: 2.6rem;
+    }
+    
+    #adopt p {
+        width: 75%;
+        font-size: 1.3rem;
+    }
+    
+    #adoptAnimals {
+        padding-top: 70px;
+    }
+    
+    #adoptAnimals p {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .dogAdopt {
+        width: 160px;
+    }
+    
+    #adoptList {
+        padding: 30px 5px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    #adoptList li p {
+        line-height: 2rem;
+    }
+    
+    #adoptImage {
+        max-width: 400px;
+    }
+
+    #contact {
+        padding: 15px 20px;
+    }
+    
+    .contactContent {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .partnerBlock p {
+        padding: 10px 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: #0F5BBF;
+    }
+
+    .partnerBlock .instagramButton img {
+        max-width: 25px;
+        margin-right: 1vw;
+    }
+
+}

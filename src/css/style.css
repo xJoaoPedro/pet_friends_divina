@@ -81,8 +81,6 @@ nav ul {
     margin-top: 10px;
 }
 
-
-
 .navListItem {
     display: flex;
     justify-content: center;
@@ -114,6 +112,7 @@ nav ul {
 
 #home {
     padding: 30px 20px;
+    position: relative;
 }
 
 #home h1 {
@@ -140,7 +139,7 @@ nav ul {
 .dogHome {
     width: 130px;
     position: absolute;
-    top: 150px;
+    top: 60px;
     right: 0;
 }
 
@@ -152,7 +151,7 @@ nav ul {
 .catHome {
     width: 130px;
     position: absolute;
-    top: 360px;
+    top: 270px;
     left: 0;
 }
 
@@ -204,7 +203,7 @@ nav ul {
     margin-right: 1.5vw;
 }
 
-#back-to-top {
+#whats {
     visibility: hidden;
     opacity: 0;
     position: fixed;
@@ -217,12 +216,12 @@ nav ul {
     z-index: 2;
 }
 
-#back-to-top.show {
+#whats.show {
     visibility: visible;
     opacity: 1;
 }
 
-#back-to-top:active {
+#whats:active {
     transform: translateX(5px) translateY(5px);
     filter: opacity(90%);
 }
@@ -244,6 +243,10 @@ nav ul {
     padding: 30px 20px;
     text-align: justify;
     color: #FFF;
+}
+
+#donate span {
+    text-decoration: underline;
 }
 
 #donate ul {
@@ -325,7 +328,7 @@ nav ul {
 }
 
 #adoptList li img {
-    width:100%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -339,6 +342,102 @@ nav ul {
 }
 
 #contact {
-    height: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
     background-color: #151F71;
+}
+
+#contact h2,
+#contact h3 {
+    padding: 10px 0;
+    text-align: center;
+    color: #FFF;
+}
+
+.contactContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.contactBlocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactBlock {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 5px;
+    background-color: #FFF;
+
+    box-shadow: 5px 5px 10px 0px #0000004d;
+    -webkit-box-shadow: 5px 5px 10px 0px #0000004d;
+    -moz-box-shadow: 5px 5px 10px 0px #0000004d;
+}
+
+.contactBlock img {
+    max-width: fit-content;
+}
+
+.contactBlock h3 {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.contactBlock p {
+    width: 100%;
+    text-align: center;
+}
+
+.partnerBlocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partnerBlock {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #FFF;
+}
+
+.imageBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #405de6, #FFD600, #833ab4, #c13584, #405de6, #fd1d1d);;
+}
+
+.partnerBlock .profilePicture {
+    max-height: 64px;
+    border-radius: 50%;
+}
+
+.partnerBlock p {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #0F5BBF;
+}
+
+.partnerBlock .instagramButton {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 5px;
 }
