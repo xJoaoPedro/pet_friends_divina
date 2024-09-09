@@ -48,7 +48,7 @@ function navConfig() {
             const selectedDiv = document.getElementById(navDivs[i]);
         
             item.addEventListener('click', function () {
-                window.scrollTo({ top: (selectedDiv.offsetTop - 90 - navMenu.offsetHeight), behavior: "smooth" })
+                window.scrollTo({ top: (selectedDiv.offsetTop - document.getElementById('header').offsetHeight - navMenu.offsetHeight), behavior: "smooth" })
             });
         }
 

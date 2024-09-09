@@ -1,0 +1,75 @@
+@media screen and (min-width: 769px) { 
+
+    header {
+        height: 110px;
+    }
+
+    nav {
+        position: sticky;
+        top: 110px;
+    }
+
+    .navListItem {
+        font-size: 1.5rem;
+    }
+
+    .navListItem img {
+        height: 24px;
+        padding-right: 2vw;
+    }
+
+    #home h1 {
+        font-size: 3.8rem;
+    }
+
+    .homeFirstText,
+    .homeSecondText {
+        font-size: 1.8rem;
+    }
+
+    .dogHome {
+        width: 210px;
+        top: 50px;
+    }
+
+    .catHome {
+        width: 210px;
+        top: 330px;
+    }
+
+    .homeContact {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 20px 0;
+    }
+
+    .homeContact span {
+        width: fit-content;
+    }
+
+    #donate h2 {
+        padding: 20px 20px;
+        font-size: 2rem;
+    }
+
+    .donateText {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    #donate iframe {
+        width: 100%;
+        height: 250px;
+        padding: 0 10px;
+    }
+
+    .addressText {
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+}

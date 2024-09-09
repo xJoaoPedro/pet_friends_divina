@@ -90,7 +90,7 @@
         font-size: 1.8rem;
     }
 
-    #donate p {
+    .donateText {
         padding: 20px 30px;
         font-size: 1.1rem;
     }
@@ -173,4 +173,7 @@
         margin-right: 1vw;
     }
 
+    .dogContact {
+        display: block;
+    }
 }
