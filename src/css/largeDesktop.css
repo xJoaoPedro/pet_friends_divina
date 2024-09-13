@@ -1,0 +1,121 @@
+@media screen and (min-width: 1280px) { 
+    header {
+        height: 120px;
+    }
+
+    nav {
+        top: 120px;
+    }
+
+    #home h1 {
+        font-size: 4rem;
+    }
+
+    .homeFirstText {
+        font-size: 2.2rem;
+    }
+
+    .homeSecondText {
+        font-size: 2rem;
+    }
+
+    .homeContact {
+        margin: 30px 20px;
+    }
+
+    #donate {
+        padding: 25px 0;
+    }
+
+    #donate h2 {
+        font-size: 2.4rem;
+        padding: 30px 20px;
+    }
+
+    .donateText {
+        font-size: 1.5rem;
+    }
+
+    #donate ul {
+        gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #donate ul li {
+        font-size: 1.6rem;
+    }
+
+    #donate img {
+        top: 200px;
+        right: 100px;
+    }
+
+    #donate iframe {
+        width: 75%;
+        height: 300px;
+    }
+
+    .addressText {
+        width: 25%;
+        height: 300px;
+        line-height: 2;
+        font-size: 1.6rem;
+        float: right;
+        text-align: start;
+        display: flex;
+        align-items: center;
+    }
+
+    #adopt {
+        padding: 30px 20px 130px 20px;
+    }
+
+    #adopt h2 {
+        font-size: 4rem;
+        padding: 30px 0;
+    }
+
+    #adopt p {
+        font-size: 2rem;
+        padding: 50px 20px;
+    }
+
+    .dogAdopt {
+        width: 230px;
+    }
+
+    #adoptImage {
+        max-width: 800px;
+    }
+
+    #adoptList {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #adoptList li p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 10px 0;
+    }
+
+    #contact h2 {
+        padding: 30px 0;
+        font-size: 2rem;
+    }
+
+    #contact h3 {
+        font-size: 1.6rem;
+    }
+
+    .dogContact {
+        width: 12%;
+    }
+
+    .contactBlock {
+        width: 60%;
+    }
+
+    .partnerBlock {
+        width: 50%;
+    }
+}
