@@ -1,7 +1,7 @@
 const adoptList = document.getElementById('adoptList');
 let animals = [];
 
-fetch('/src/js/animals.json')
+fetch('./src/js/animals.json')
     .then((response) => response.json())
     .then((animalsJson) => animalsJson.animals)
     .then((animalsList) => {
