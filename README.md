@@ -4,9 +4,9 @@
 # <a href="https://www.petfriendsdivina.com.br/"> Pet Friends Divina </a> 
 </div>
 
-<div style="display: flex; justify-content: center; gap: 50px;">
-  <img height="170px" src="./assets/gifs/petfdesktop.gif">
-  <img height="170px" src="./assets/gifs/petfmobile.gif">
+<div align="center">
+  <img style="margin-right: 50px;" height="200px" src="./assets/gifs/petfdesktop.gif">
+  <img height="200px" src="./assets/gifs/petfmobile.gif">
 </div>
 
 ## Sobre o projeto
