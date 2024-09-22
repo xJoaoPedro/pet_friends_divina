@@ -1,7 +1,7 @@
 <div align="center">
 <img height="70px" src="./assets/images/logo.png">
 
-# <a> Pet Friends Divina </a> 
+# <a href="https://www.petfriendsdivina.com.br/"> Pet Friends Divina </a> 
 </div>
 
 ## Sobre o projeto
