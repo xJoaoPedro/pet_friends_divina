@@ -10,9 +10,12 @@
 </div>
 
 ## Sobre o projeto
-<!-- inserir paragrafo sobre o projeto -->
 
----
+O objetivo da iniciativa é auxiliar a comunidade animal local, dando visibilidade e tornando mais práticos os cuidados e processos de procura pelos animais. Integrar um ambiente tecnológico para o auxílio nas causas animais, tais como doações, trocas e adoções.
+
+Na indústria animal, um problema recorrente e visível são os abandonos e maus tratos, onde muitas vezes os animais são abandonados por famílias que não possuem condições de arcar com as despesas destes animaizinhos. Portanto, através do projeto, o plano é tornar mais 
+práticos os tratamentos gerais referentes a animais, como adoções, doações para organizações e canis, procura por animais perdidos e etc., criando uma rede de apoio por meio da construção de sites e redes sociais, deixando mais dinâmica e tecnológica a contribuição para a causa animal local.
+
 ## Sobre meu trabalho
 
 Este é o repositório que utilizei para o versionamento do projeto, no qual atuei como desenvolvedor web front-end, onde apliquei intensivamente minhas habilidades em **HTML5, CSS3 e JavaScript Vanilla** para criar uma landing page **responsiva e otimizada.** Utilizei técnicas de design responsivo e práticas de SEO para melhorar a experiência do usuário e a visibilidade nos motores de busca.
