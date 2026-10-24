@@ -3,7 +3,7 @@ const canAnimate = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'unde
 
 if (canAnimate) {
     gsap.registerPlugin(ScrollTrigger);
-    playHeroIntro();
+    if (document.querySelector('.hero')) playHeroIntro();
     revealOnScroll(document.querySelectorAll('main .reveal'));
     // o footer fica no fim da página e nunca chega aos 90% da tela, então dispara já na borda de baixo
     revealOnScroll(document.querySelectorAll('.footer .reveal'), 'top bottom');
@@ -59,15 +59,8 @@ function revealOnScroll(elements, start = 'top 90%') {
     });
 }
 
-// os bichinhos que espiam das bordas sobem quando a section aparece
+// o cachorro do footer sobe de trás dele quando o footer aparece
 function revealPeeks() {
-    gsap.from('.peekPuppy', {
-        yPercent: 100,
-        duration: 1,
-        ease: 'back.out(1.4)',
-        scrollTrigger: { trigger: '#adoptList', start: 'bottom 95%' },
-    });
-
     gsap.from('.footerDog img', {
         yPercent: 100,
         duration: .9,

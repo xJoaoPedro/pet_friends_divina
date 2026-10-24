@@ -9,28 +9,42 @@
         padding: 112px 0;
     }
 
-    .about {
+    .hero + .section {
         padding-top: calc(var(--pets-w) * .1 + 96px);
-    }
-
-    .peekPuppy {
-        display: block;
     }
 
     .helpCard {
         padding: 32px;
     }
 
-    #adoptList {
+    .animalGrid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .animalCard {
+    .animalGrid .animalCard {
         grid-template-columns: 38% 1fr;
     }
 
-    .animalBody {
+    .animalGrid .animalBody {
         padding: 20px 18px;
+    }
+
+    .animalGrid .animalInfo li {
+        font-size: .9rem;
+    }
+
+    /* na home os 5 anúncios mais recentes ficam lado a lado */
+    .showcase {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .showcase .animalCard {
+        max-width: none;
     }
 
     .donateGrid {

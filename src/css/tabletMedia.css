@@ -9,18 +9,15 @@
         padding: 96px 0;
     }
 
-    .heroLogo {
-        height: 52px;
+    .hero + .section {
+        padding-top: calc(var(--pets-w) * .1 + 80px);
     }
 
     .heroActions {
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         max-width: none;
-    }
-
-    .about {
-        padding-top: calc(var(--pets-w) * .1 + 80px);
     }
 
     .helpGrid {
@@ -31,25 +28,41 @@
         padding: 28px 24px;
     }
 
-    .mapCard iframe {
-        height: 300px;
+    .animalGrid .animalCard {
+        grid-template-columns: 40% 1fr;
     }
 
-    #adoptList {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+    .animalGrid .animalBody {
+        padding: 22px 24px;
+    }
+
+    .animalGrid .animalInfo li {
+        font-size: .92rem;
+    }
+
+    .showcase {
+        margin: 0 -32px;
+        padding: 8px 32px 24px;
+        scroll-padding: 0 32px;
+    }
+
+    .showcase .animalCard {
+        flex-basis: 42%;
     }
 
     .contactGrid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(240px, 340px));
+        justify-content: center;
     }
 
     .contactCard {
         padding: 28px 14px;
     }
 
-    .contactCard p {
-        font-size: .92rem;
+    .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
     }
 
     .footerDog {
