@@ -41,6 +41,20 @@ tabs.forEach((tab) => tab.addEventListener('click', () => showTab(tab.dataset.ta
 // o botão "Criar conta" da home abre direto na aba de cadastro
 if (params.get('aba') === 'cadastro') showTab('signup');
 
+// quando o login com Google ou o link do email falha, o Supabase devolve o erro na URL
+const hashParams = new URLSearchParams(window.location.hash.slice(1));
+const returnedError = params.get('error_description') || hashParams.get('error_description');
+
+if (returnedError) {
+    console.error('Erro devolvido pelo Supabase:', returnedError);
+    const expired = (params.get('error_code') || hashParams.get('error_code')) === 'otp_expired';
+    showMessage(expired
+        ? 'Este link expirou ou já foi usado. Entre com seu email e senha para receber um novo.'
+        : 'Não foi possível concluir o login. Tente novamente em instantes.', 'error');
+    // tira o erro da barra de endereço, mantendo a página de destino
+    history.replaceState(null, '', `login.html?next=${encodeURIComponent(next)}`);
+}
+
 function showTab(name) {
     tabs.forEach((tab) => tab.setAttribute('aria-selected', tab.dataset.tab === name));
     loginForm.hidden = name !== 'login';
