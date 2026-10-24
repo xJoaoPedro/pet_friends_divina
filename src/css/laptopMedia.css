@@ -1,90 +1,93 @@
-@media screen and (min-width: 769px) { 
+@media screen and (min-width: 769px) {
 
-    header {
-        height: 110px;
+    #menuButton {
+        display: none;
     }
 
-    nav {
-        position: sticky;
-        top: 110px;
+    .nav,
+    .nav.open {
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        max-height: none;
+        padding: 0;
+        overflow: visible;
+        background: none;
+        box-shadow: none;
     }
 
-    .navListItem {
-        font-size: 1.5rem;
+    .navLink {
+        padding: 8px 16px;
+        border: 0;
+        border-radius: 999px;
+        font-size: .95rem;
     }
 
-    .navListItem img {
-        height: 24px;
-        padding-right: 2vw;
+    .navLink:hover {
+        background-color: #FFFFFF14;
     }
 
-    #home h1 {
-        font-size: 3.8rem;
+    .navLink.active {
+        background-color: #FFFFFF24;
     }
 
-    .homeFirstText,
-    .homeSecondText {
-        font-size: 1.8rem;
+    .nav .btn {
+        margin: 0 0 0 12px;
     }
 
-    .dogHome {
-        width: 210px;
-        top: 50px;
+    .hero {
+        --side-w: clamp(200px, 25vw, 380px);
+        padding-bottom: calc(var(--pets-w) * .2137 + 24px);
     }
 
-    .catHome {
-        width: 210px;
-        top: 330px;
+    .heroContent {
+        padding-bottom: 48px;
     }
 
-    .homeContact {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin: 20px 0;
+    /* no desktop os bichinhos ficam um de cada lado do texto */
+    .heroSide {
+        top: calc((100% - var(--pets-w) * .2137) / 2 + 40px);
+        bottom: auto;
+        width: var(--side-w);
+        translate: 0 -50%;
     }
 
-    .homeContact span {
-        width: fit-content;
+    .donateGrid {
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
     }
 
-    #donate h2 {
-        padding: 20px 20px;
-        font-size: 2rem;
+    .mapCard iframe {
+        height: 340px;
     }
 
-    .donateText {
-        padding: 20px;
-        font-size: 1.2rem;
+    .donateIllustration {
+        top: -70px;
+        right: -24px;
+        width: 140px;
     }
 
-    #donate iframe {
-        width: 100%;
-        height: 250px;
-        padding: 0 10px;
+    .animalBody {
+        padding: 24px 26px;
     }
 
-    .addressText {
-        width: 100%;
-        padding: 10px 5px;
-        text-align: center;
-        font-size: 1.3rem;
+    .contactCard {
+        padding: 32px 20px;
     }
 
-    #adopt {
-        padding: 30px 20px 100px 20px;
+    .contactCard p {
+        font-size: 1rem;
     }
 
-    #adoptImage {
-        max-width: 600px;
+    .footerInner {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .contactBlock {
-        width: 60%;
-    }
-
-    .partnerBlock {
-        width: 60%;
+    .footerDog {
+        left: 12%;
+        translate: none;
+        width: 190px;
     }
 }

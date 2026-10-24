@@ -2,241 +2,271 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pet Friends Divina: doações e adoção de animais em Capão da Canoa/RS. Cada gesto faz a diferença.">
+    <meta name="theme-color" content="#151F71">
+    <title>Pet Friends Divina</title>
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nunito:wght@400;600;700;800&display=swap">
+
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/tabletMedia.css">
     <link rel="stylesheet" href="src/css/laptopMedia.css">
     <link rel="stylesheet" href="src/css/largeDesktop.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Friends Divina</title>
-
-    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
 
-    <a id="whats" href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!" target="_blank" rel="noopener noreferrer">
-        <img src="./assets/icons/whatsapp.svg" alt="whatsapp icon">
+    <a id="whats" href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!"
+        target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <img src="./assets/icons/whatsapp.svg" alt="">
     </a>
 
-    <header id="header">
-        <img alt="menu icon" id="menuButton">
+    <header id="header" class="header">
+        <div class="container headerInner">
+            <a href="#home" class="headerLogo" aria-label="Voltar ao início">
+                <img src="./assets/images/logo.png" alt="Pet Friends Divina">
+            </a>
 
-        <img src="./assets/images/logo.png" alt="pet friends logo" id="logo">
+            <nav id="navMenu" class="nav" aria-label="Navegação principal">
+                <a href="#about" class="navLink">Sobre</a>
+                <a href="#donate" class="navLink">Doar</a>
+                <a href="#adopt" class="navLink">Adoção</a>
+                <a href="#contact" class="navLink">Contato</a>
+                <a href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!"
+                    target="_blank" rel="noopener noreferrer" class="btn btnWhatsapp btnSmall">
+                    <img src="./assets/icons/whatsapp.svg" alt=""> Fale conosco
+                </a>
+            </nav>
 
+            <button id="menuButton" type="button" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <nav id="navMenu">
+    <main>
 
-        <ul>
-            <li class="navListItem">
-                <img src="./assets/icons/home.svg" alt="home icon"> Home
-            </li>
-            <li class="navListItem">
-                <img src="./assets/icons/donate.svg" alt="donate icon"> Doar
-            </li>
-            <li class="navListItem">
-                <img src="./assets/icons/adopt.svg" alt="adoption icon"> Adoção
-            </li>
-            <li class="navListItem">
-                <img src="./assets/icons/contact.svg" alt="contact icon">Contato
-            </li>
-        </ul>
-
-    </nav>
-
-    <section id="home">
-        <h1>Cada gesto faz a diferença.</h1>
-
-        <div class="homeFirstText">
-            <p>Com sua ajuda, podemos transformar a vida de muitos animais em busca de um lar.</p>
-        </div>
-
-        <img src="./assets/images/dog1.png" alt="dog image" class="dogHome">
-
-        <div class="homeSecondText">
-            <p>Nós da Pet Friends vemos cada doação e cada adoção como um ato de amor, que contribui para um futuro
-                melhor para nossos amigos de patas.</p>
-        </div>
-
-        <img src="./assets/images/cat1.png" alt="cat image" class="catHome">
-
-        <div class="homeContact">
-            <span>
-                Visite o nosso <a href="https://www.instagram.com/petfriends_divina/" target="_blank" rel="noopener noreferrer" class="instagramButton"><img src="./assets/icons/instagram.svg"
-                        alt="instagram icon" srcset=""> Instagram</a>
-            </span>
-            <span>ou</span>
-            <span>
-                Fale conosco via <a href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!" target="_blank" rel="noopener noreferrer" class="whatsappButton"><img src="./assets/icons/whatsapp.svg"
-                        alt="whatsapp icon"> Whatsapp</a>
-            </span>
-        </div>
-
-    </section>
-
-
-    <section id="donate">
-
-        <h2>Como faço para doar?</h2>
-
-        <p class="donateText">
-            Para doar é bem simples, basta levar sua contribuição até a nossa caixa de doações, que está localizada na
-            <span>Avenida Poti, 1550, no Instituto Divina Providência.</span> <br><br>
-            Doações que aceitamos:
-        </p>
-
-        <ul>
-            <li>- Ração</li>
-            <li>- Casinhas</li>
-            <li>- Camas</li>
-            <li>- Roupinhas</li>
-            <li>- Remédios</li>
-        </ul>
-
-        <img src="./assets/images/donateImage.svg" alt="dog house and dog food image">
-
-        <h2>Onde nos encontrar:</h2>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2059.4425856240546!2d-50.02341180121687!3d-29.761567017502358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951878835c706f47%3A0x2e7101975ac1e5e4!2sInstituto%20Divina%20Provid%C3%AAncia!5e0!3m2!1spt-BR!2sbr!4v1725759750331!5m2!1spt-BR!2sbr"
-            style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <p class="addressText">
-            Instituto Divina Providência <br>
-            Avenida Poti, 1550, Bairro Centro <br>
-            Capão da Canoa/RS
-        </p>
-
-
-    </section>
-
-    <section id="adopt">
-
-        <h2>Que tal adotar um amigo?</h2>
-
-        <p>Nossos parceiros possuem muitos animaizinhos que estão esperando por um lar.</p>
-
-        <div id="adoptAnimals">
-            <p>
-                Entre em contato conosco se houver interesse em algum dos nossos companheirinhos:
-            </p>
-
-            <ul id="adoptList"> </ul>
-
-        </div>
-
-        <img src="./assets/images/dog2.png" alt="dog image" class="dogAdopt">
-
-        <img id="adoptImage" src="./assets/images/adoptImage.png" alt="dog image">
-    </section>
-
-    <section id="contact">
-
-        <h2>Ficou com alguma dúvida?</h2>
-
-        <h3>Fala pra gente!</h3>
-
-        <div class="contactContent">
-
-            <div class="contactBlocks">
-                <div class="contactBlock">
-
-                    <img src="./assets/icons/location.svg" alt="location pin icon">
-
-                    <h3 style="color: #0F5BBF;">Endereço:</h3>
-
-                    <p>
-                        Avenida Poti, 1550 - Bairro Centro
-                    </p>
-
-                </div>
-
-                <div class="contactBlock">
-
-                    <img src="./assets/icons/whatsappalt.svg" alt="whatsapp icon">
-
-                    <h3 style="color: #0F5BBF;">Whatsapp:</h3>
-
-                    <p>
-                        (51) 99717-5372
-                    </p>
-
-                </div>
-
-                <div class="contactBlock">
-
-                    <img src="./assets/icons/email.svg" alt="email icon">
-
-                    <h3 style="color: #0F5BBF;">Email:</h3>
-
-                    <p>
-                        petfriendsdivina@gmail.com
-                    </p>
-
-                </div>
+        <section id="home" class="hero">
+            <div class="container heroTop">
+                <img src="./assets/images/logo.png" alt="Pet Friends Divina" class="heroLogo">
             </div>
 
-            <div class="partnerBlocks">
+            <div class="container heroContent">
+                <span class="eyebrow">Capão da Canoa · RS</span>
 
-                <h3>Nossas parcerias:</h3>
+                <h1>Cada gesto faz a <em>diferença.<svg class="underline" viewBox="0 0 200 20"
+                            preserveAspectRatio="none" aria-hidden="true">
+                            <path d="M5 14 C 50 8, 140 5, 195 10" />
+                        </svg></em></h1>
 
-                <div class="partnerBlock">
+                <p>Com sua ajuda, podemos transformar a vida de muitos animais em busca de um lar.</p>
 
-                    <div class="imageBackground">
-                        <img src="./assets/images/lambeijos.jpg" alt="lambeijos profile picture" class="profilePicture">
-                    </div>
-
-                    <p>Lambeijos</p>
-
-                    <a href="https://www.instagram.com/lambeijos_capao/" target="_blank" rel="noopener noreferrer" class="instagramButton"><img src="./assets/icons/instagram.svg" alt="instagram icon"> lambeijos_capao</a>
-
+                <div class="heroActions">
+                    <a href="#adopt" class="btn btnHero btnAdopt">
+                        <svg viewBox="0 0 512 512" aria-hidden="true">
+                            <path d="M490.39,182.75c-5.55-13.19-14.77-22.7-26.67-27.49l-.16-.06a46.46,46.46,0,0,0-17-3.2h-.64c-27.24.41-55.05,23.56-69.19,57.61-10.37,24.9-11.56,51.68-3.18,71.64,5.54,13.2,14.78,22.71,26.73,27.5l.13.05a46.53,46.53,0,0,0,17,3.2c27.5,0,55.6-23.15,70-57.65C497.65,229.48,498.78,202.72,490.39,182.75Z" />
+                            <path d="M381.55,329.61c-15.71-9.44-30.56-18.37-40.26-34.41C314.53,250.8,298.37,224,256,224s-58.57,26.8-85.39,71.2c-9.72,16.06-24.6,25-40.36,34.48-18.07,10.86-36.74,22.08-44.8,44.16a66.93,66.93,0,0,0-4.65,25c0,35.95,28,65.2,62.4,65.2,17.75,0,36.64-6.15,56.63-12.66,19.22-6.26,39.09-12.73,56.27-12.73s37,6.47,56.15,12.73C332.2,457.85,351,464,368.8,464c34.35,0,62.3-29.25,62.3-65.2a67,67,0,0,0-4.75-25C418.29,351.7,399.61,340.47,381.55,329.61Z" />
+                            <path d="M150,188.85c11.9,14.93,27,23.15,42.52,23.15a42.88,42.88,0,0,0,6.33-.47c32.37-4.76,52.54-44.26,45.92-90C242,102.3,234.6,84.39,224,71.11,212.12,56.21,197,48,181.49,48a42.88,42.88,0,0,0-6.33.47c-32.37,4.76-52.54,44.26-45.92,90C132,157.67,139.4,175.56,150,188.85Z" />
+                            <path d="M313.16,211.53a42.88,42.88,0,0,0,6.33.47c15.53,0,30.62-8.22,42.52-23.15,10.59-13.29,17.95-31.18,20.75-50.4h0c6.62-45.72-13.55-85.22-45.92-90a42.88,42.88,0,0,0-6.33-.47C315,48,299.88,56.21,288,71.11c-10.6,13.28-18,31.19-20.76,50.44C260.62,167.27,280.79,206.77,313.16,211.53Z" />
+                            <path d="M111.59,308.8l.14-.05c11.93-4.79,21.16-14.29,26.69-27.48,8.38-20,7.2-46.75-3.15-71.65C120.94,175.16,92.85,152,65.38,152a46.4,46.4,0,0,0-17,3.2l-.14.05C36.34,160,27.11,169.54,21.58,182.73c-8.38,20-7.2,46.75,3.15,71.65C39.06,288.84,67.15,312,94.62,312A46.4,46.4,0,0,0,111.59,308.8Z" />
+                        </svg>
+                        Quero adotar
+                    </a>
+                    <a href="#donate" class="btn btnHero btnDonate">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M17.726 13.02 14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z" />
+                        </svg>
+                        Como doar
+                    </a>
                 </div>
 
-                <div class="partnerBlock">
+                <a href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!"
+                    target="_blank" rel="noopener noreferrer" class="btn btnWhatsapp heroContact">
+                    <img src="./assets/icons/whatsapp.svg" alt=""> Fale conosco
+                </a>
+            </div>
 
-                    <div class="imageBackground">
-                        <img src="./assets/images/petdasgu.jpg" alt="pet das gurias profile picture" class="profilePicture">
-                    </div>
+            <!-- os wrappers cuidam da posição e o GSAP anima só a imagem de dentro -->
+            <div class="heroSide heroSideLeft">
+                <img src="./assets/images/cat1.png" alt="">
+            </div>
+            <div class="heroSide heroSideRight">
+                <img src="./assets/images/dog1.png" alt="">
+            </div>
 
-                    <p>Pet das Gurias</p>
+            <div class="heroPets">
+                <img src="./assets/images/adoptImage.png" alt="Cães e gatos espiando por cima da borda">
+            </div>
+        </section>
 
-                    <a href="https://www.instagram.com/petshopdasgurias/" target="_blank" rel="noopener noreferrer" class="instagramButton"><img src="./assets/icons/instagram.svg" alt="instagram icon"> petshopdasgurias</a>
-
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="sectionHead center">
+                    <span class="eyebrow reveal">Quem somos</span>
+                    <h2 class="reveal">Um ato de amor pelos nossos amigos de patas</h2>
+                    <p class="reveal">Nós da Pet Friends vemos cada doação e cada adoção como um ato de amor, que
+                        contribui para um futuro melhor para nossos amigos de patas.</p>
                 </div>
 
-                <div class="partnerBlock">
+                <div class="helpGrid">
+                    <a href="#donate" class="helpCard reveal">
+                        <span class="helpIcon"><img src="./assets/icons/donate.svg" alt=""></span>
+                        <h3>Doe</h3>
+                        <p>Ração, casinhas, camas, roupinhas e remédios fazem toda a diferença no dia a dia deles.</p>
+                        <span class="helpLink">Como doar <span aria-hidden="true">→</span></span>
+                    </a>
 
-                    <div class="imageBackground">
-                        <img src="./assets/images/gaia.jpg" alt="gaia profile picture" class="profilePicture">
+                    <a href="#adopt" class="helpCard reveal">
+                        <span class="helpIcon"><img src="./assets/icons/adopt.svg" alt=""></span>
+                        <h3>Adote</h3>
+                        <p>Temos muitos animaizinhos que estão esperando por um lar.</p>
+                        <span class="helpLink">Conhecer os animais <span aria-hidden="true">→</span></span>
+                    </a>
+
+                    <a href="#contact" class="helpCard reveal">
+                        <span class="helpIcon"><img src="./assets/icons/contact.svg" alt=""></span>
+                        <h3>Fale com a gente</h3>
+                        <p>Ficou com alguma dúvida? Estamos no WhatsApp para conversar.</p>
+                        <span class="helpLink">Entrar em contato <span aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+
+                <div class="socialRow">
+                    <span class="reveal">Quer ajudar ou tirar uma dúvida?</span>
+                    <a href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!"
+                        target="_blank" rel="noopener noreferrer" class="btn btnWhatsapp btnSmall reveal"><img
+                            src="./assets/icons/whatsapp.svg" alt=""> Fale conosco no WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="section sectionDark">
+            <div class="container donateGrid">
+
+                <div class="donateInfo">
+                    <div class="sectionHead">
+                        <span class="eyebrow reveal">Doações</span>
+                        <h2 class="reveal">Como faço para doar?</h2>
+                        <p class="reveal">Para doar é bem simples: basta levar sua contribuição até a nossa caixa de
+                            doações, que fica no <strong>Instituto Divina Providência</strong>, na Avenida Poti, 1550.
+                        </p>
                     </div>
 
-                    <p>GAIA</p>
+                    <h3 class="listTitle reveal">Doações que aceitamos</h3>
 
-                    <a href="https://www.instagram.com/gaia.pets/" target="_blank" rel="noopener noreferrer" class="instagramButton"><img src="./assets/icons/instagram.svg" alt="instagram icon"> gaia.pets</a>
+                    <ul class="donateList">
+                        <li class="reveal">Ração</li>
+                        <li class="reveal">Casinhas</li>
+                        <li class="reveal">Camas</li>
+                        <li class="reveal">Roupinhas</li>
+                        <li class="reveal">Remédios</li>
+                    </ul>
+                </div>
 
+                <div class="mapCard reveal">
+                    <img src="./assets/images/donateImage.svg" alt="" class="donateIllustration">
+
+                    <iframe title="Mapa do Instituto Divina Providência"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2059.4425856240546!2d-50.02341180121687!3d-29.761567017502358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951878835c706f47%3A0x2e7101975ac1e5e4!2sInstituto%20Divina%20Provid%C3%AAncia!5e0!3m2!1spt-BR!2sbr!4v1725759750331!5m2!1spt-BR!2sbr"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="mapInfo">
+                        <span class="mapIcon"><img src="./assets/icons/location.svg" alt=""></span>
+                        <p>
+                            <strong>Instituto Divina Providência</strong>
+                            Avenida Poti, 1550, Bairro Centro<br>
+                            Capão da Canoa/RS
+                        </p>
+                    </div>
                 </div>
 
             </div>
+        </section>
 
+        <section id="adopt" class="section adopt">
+            <div class="container">
+                <div class="sectionHead">
+                    <span class="eyebrow reveal">Adoção</span>
+                    <h2 class="reveal">Que tal adotar um amigo?</h2>
+                    <p class="reveal">Temos muitos animaizinhos que estão esperando por um lar. Entre em contato
+                        conosco se houver interesse em algum dos nossos companheirinhos.</p>
+                </div>
+
+                <ul id="adoptList"></ul>
+            </div>
+
+            <img src="./assets/images/dog2.png" alt="" class="peekPuppy">
+        </section>
+
+        <section id="contact" class="section sectionDark">
+            <div class="container">
+                <div class="sectionHead center">
+                    <span class="eyebrow reveal">Contato</span>
+                    <h2 class="reveal">Ficou com alguma dúvida?</h2>
+                    <p class="reveal">Fala pra gente! Escolha o canal que preferir.</p>
+                </div>
+
+                <div class="contactGrid">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Instituto+Divina+Provid%C3%AAncia+Cap%C3%A3o+da+Canoa"
+                        target="_blank" rel="noopener noreferrer" class="contactCard reveal">
+                        <span class="contactIcon"><img src="./assets/icons/location.svg" alt=""></span>
+                        <h3>Endereço</h3>
+                        <p>Avenida Poti, 1550, Bairro Centro</p>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=5551997175372&text=Ola,%20vim%20pelo%20site!"
+                        target="_blank" rel="noopener noreferrer" class="contactCard reveal">
+                        <span class="contactIcon"><img src="./assets/icons/whatsappalt.svg" alt=""></span>
+                        <h3>WhatsApp</h3>
+                        <p>(51) 99717-5372</p>
+                    </a>
+
+                    <a href="mailto:petfriendsdivina@gmail.com" class="contactCard reveal">
+                        <span class="contactIcon"><img src="./assets/icons/email.svg" alt=""></span>
+                        <h3>Email</h3>
+                        <p>petfriendsdivina@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footerDog">
+            <img src="./assets/images/dog3.png" alt="">
         </div>
 
-        <img src="./assets/images/dog3.png" alt="dog image" class="dogContact">
+        <div class="container footerInner">
+            <img src="./assets/images/logo.png" alt="Pet Friends Divina" class="footerLogo reveal">
+            <p class="reveal">Instituto Divina Providência · Capão da Canoa/RS</p>
+            <a href="https://github.com/xJoaoPedro" target="_blank" rel="noopener noreferrer" class="reveal">
+                Desenvolvido por @xJoaoPedro
+            </a>
+        </div>
+    </footer>
 
-        <a style="width: 100%; padding-top: 20px;text-align: center; font-style: none; color: #FFF;"
-            href="https://github.com/xJoaoPedro" target="_blank">@xJoaoPedro</a>
 
-    </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script src="./src/js/navigation.js"></script>
     <script src="./src/js/btnScroll.js"></script>
-    <script src="./src/js/adaptImage.js"></script>
+    <script src="./src/js/animations.js"></script>
     <script src="./src/js/adoptAnimals.js"></script>
 </body>
 
